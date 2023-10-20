@@ -59,3 +59,53 @@ caption{
     font-size: 30px;
     margin-top: 20px;
 }
+
+.wrapper{
+    width:90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-rows: 80px 50px auto 50px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    background-color: rgb(179, 67, 67);
+    grid-area: header;
+}
+
+nav{
+    background-color: rgb(151, 51, 51);
+    grid-area: nav;
+}
+
+nav > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:100%;
+    margin: 0;
+    padding:0;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-items: stretch;
+}
+
+main{
+    background-color: rgb(231, 231, 231);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+footer{
+    background-color: rgb(218, 233, 11);
+    grid-area: footer;
+}
