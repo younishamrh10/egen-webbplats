@@ -26,11 +26,11 @@ th{
 }
 
 tr:nth-child(odd){
-    background-color: rgb(255, 204, 0);
+    background-color: rgb(185, 174, 130);
 }
 
 tr:nth-child(even){
-    background-color: rgb(212, 6, 6);
+    background-color: rgb(255, 136, 0);
     color: rgb(240, 240, 240);
 }
 
@@ -39,7 +39,7 @@ th:nth-child(1){
 }
 
 th:nth-child(4){
-    text-align: right; 
+    text-align: center; 
 }
 
 th:nth-child(2){
@@ -51,13 +51,17 @@ th:nth-child(3){
 }
 
 th:nth-child(4){
-    text-align: right;
+    text-align: center;
 }
 
 caption{
-    caption-side: bottom;
     font-size: 30px;
     margin-top: 20px;
+}
+
+p img{
+    max-width: 1000px;
+    height: 100px;
 }
 
 .wrapper{
@@ -104,8 +108,11 @@ main{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
 }
+h2{
+    text-align: center;
+}
 
 footer{
-    background-color: rgb(218, 233, 11);
+    background-color: rgb(221, 235, 25);
     grid-area: footer;
 }
