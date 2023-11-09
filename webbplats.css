@@ -1,42 +1,42 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0); /*Bakrundsfärg*/
 }
 
-h1{
+h1{ /* Grubb selektorer*/
     font-family: Arial;
-    font-size: 22px;
-    text-align: center;
+    font-size: 22px; /*Textstorlek 22pixlar*/
+    text-align: center; /* Texten blir centrerad*/
 }
 
 u1{
-    font-family: Arial;
+    font-family: Arial; /* Font arial*/
     font-size: 22px;
 }
 
 table,th,td{
-    border:1px solid black;
-    border-collapse: collapse;
-    height: 30px;
-    width: 1000px;
+    border:1px solid black; /* En svart kant med tjocklekten 1 pixlar runt elementen*/
+    border-collapse: collapse; /* Linjerna i border går ihop till enda*/
+    height: 30px; /* Hjöden blir 30 pixlar*/
+    width: 1000px; /*Bredden blir 1000 pixlar*/
     font-family: Arial;
 }
 
-th{
+th{ /* Första raden i tabellen*/
     background-color: rgb(255, 255, 255);
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd){ /* Varje udda    tabellrad får färgen ljusgul*/
     background-color: rgb(185, 174, 130);
     text-align: center; 
 }
 
-tr:nth-child(even){
+tr:nth-child(even){ /* Varje jämn tabelrad får färgen gul och rade där på vit*/
     background-color: rgb(255, 136, 0);
     color: rgb(240, 240, 240);
     text-align: center;
 }
 
-th:nth-child(1){
+th:nth-child(1){ /* kolumens namn*/
     text-align: center;
 }
 
@@ -56,49 +56,49 @@ th:nth-child(4){
     text-align: center;
 }
 
-caption{
+caption{ /* Tabelrubrik*/
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 20px; /* Marginal runt 20 pixlar*/
 }
 
-p img{
-    max-width: 1000px;
-    height: 100px;
+p img{ /* img inuti p*/
+    max-width: 1000px; 
+    height: 100px; /* Höjden blir 100 pixlar*/
 }
 
-.wrapper{
-
+.wrapper{ /*Klass*/
     margin:0 auto;
-    display:grid;
-    grid-template-rows: 90px 50px auto 50px;
-    grid-template-areas:
+    display:grid; /*Gridlayout*/
+    grid-template-rows: 90px 50px auto 50px; /* 4 rader, heder är 90 pixlar, nav är 50 pixlar, main är auto som betyder att de anpassar sig till texten, footer är 50 pixlar*/
+    grid-template-areas: /* Ordning på sidan, längst upp är de header och längst ner är det footer*/
     "header"
     "nav"
     "main"
     "footer";
+    height: 97vh; /* Hjöden blir 97% av dokumentet*/
 }
 
-header{
+header{ 
     background-color: rgb(179, 67, 67);
-    grid-area: header;
+    grid-area: header; /* Gridområde*/
 }
 
-nav{
+nav{ 
     background-color: rgb(151, 51, 51);
     grid-area: nav;
 }
 
-nav > ul {
+nav > ul { /*Elementet ul direkt inuti elementet nav*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 kolummer med lika stora bred*/
     height:100%;
     margin: 0;
     padding:0;
 }
 
 nav li{
-    list-style-type: none;
-    text-align: center;
+    list-style-type: none; /* Punkterna i listan tas bort, ingen stil*/
+    text-align: center;  
     display: grid;
     align-items: stretch;
 }
@@ -111,22 +111,22 @@ main{
     grid-template-rows: auto;
 }
 
-#index2 main{
+#index2 main{ /*sida 2*/
     grid-template-columns: 1fr;
 
 }
 
-h2{
+h2{ /* Grupp selektorer*/
     text-align: center;
 }
 
 footer{
     background-color: rgb(221, 235, 25);
-    grid-area: footer;
+        
 }
 
 .p2 img{
-    height: 300px;
+    height: 300px; /* Hjöden är 300 pixlar*/
 }
 
 .p3 img{
@@ -138,6 +138,6 @@ footer{
 }
 
 table{
-    margin: center;
+    margin: center; /* Marginal runt i tabbelen  är centrelad*/
 }
 
